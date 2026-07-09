@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.top-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #dbe2ea;
+    border-radius:10px;
+    font-size:16px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#02242b;
+}
+
+button{
+    background:linear-gradient(135deg,#06b6d4,#8b5cf6);
+    color:white;
+    border:none;
+    padding:14px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+.summary{
+    background:linear-gradient(135deg,#06b6d4,#8b5cf6);
+    color:white;
+    padding:30px;
+    border-radius:15px;
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.summary h3{
+    margin-bottom:10px;
+}
+
+.summary span{
+    font-size:32px;
+    font-weight:bold;
+}
+
+.expense-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.expense-card h2{
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.expense-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#367ec6;
+    padding:15px;
+    border-left:5px solid #ffffff;
+    border-radius:10px;
+    margin-bottom:12px;
+}
+
+.left{
+    display:flex;
+    gap:25px;
+}
+
+.title{
+    font-size:18px;
+    font-weight:600;
+}
+
+.amount{
+    color:#f9fcff;
+}
+
+.actions i{
+    margin-left:15px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+.fa-pen{
+    color:#067ed4;
+}
+
+.fa-trash{
+    color:#ab6a6a;
+}
+
+.empty{
+    text-align:center;
+    padding:20px;
+    color:#64748b;
+}
+
+@media(max-width:768px){
+
+.top-section{
+    grid-template-columns:1fr;
+}
+
+.summary{
+    flex-direction:column;
+    gap:20px;
+}
+
+.expense-item{
+    flex-direction:column;
+    gap:15px;
+    align-items:flex-start;
+}
+}
