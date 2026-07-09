@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Budget Planner</title>
+
+ <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<script src="script.js"></script>
+<div class="container">
+
+    <div class="top-section">
+
+        <div class="card">
+            <h2>Budget</h2>
+
+            <input
+            type="number"
+            id="budgetInput"
+            placeholder="Enter Total Budget">
+
+            <button onclick="setBudget()">
+                Set Budget
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Expenses</h2>
+
+            <input
+            type="text"
+            id="expenseTitle"
+            placeholder="Expense Title">
+
+            <input
+            type="number"
+            id="expenseAmount"
+            placeholder="Expense Cost">
+
+            <button onclick="addExpense()">
+                Add Expense
+            </button>
+        </div>
+
+    </div>
+
+    <div class="summary">
+
+        <div>
+            <h3>Total Budget</h3>
+            <span id="budgetValue">0</span>
+        </div>
+
+        <div>
+            <h3>Total Expenses</h3>
+            <span id="expenseValue">0</span>
+        </div>
+
+        <div>
+            <h3>Balance</h3>
+            <span id="balanceValue">0</span>
+        </div>
+
+    </div>
+
+    <div class="expense-card">
+
+        <h2>Expense List</h2>
+
+        <div id="expenseList"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
